@@ -1,3 +1,12 @@
 .product-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.product-grid>article{min-width:0}
 @media(max-width:900px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .product-art.electric-art{background-image:url('/images/electric-garden-sprite.jpg');background-size:400% 200%}
+.intro{display:grid;grid-template-columns:.82fr 1.18fr;min-height:520px;padding:0;text-align:left}
+.intro-copy{padding:70px 5vw;display:flex;flex-direction:column;justify-content:center}
+.intro-copy h1{font-size:clamp(50px,5.6vw,88px)}
+.hero-image{position:relative;min-height:520px;overflow:hidden;background:url('/images/astreli-hero-editorial.jpg') center/cover no-repeat}
+.hero-image img{display:none}
+.collection-browser{padding-bottom:38px}
+.products{padding-top:48px}
+.collection-title{margin-bottom:36px}
+@media(max-width:700px){.intro{grid-template-columns:1fr}.intro-copy{padding:60px 22px}.intro-copy h1{font-size:47px}.hero-image{min-height:74vw}.collection-browser{padding-bottom:28px}.products{padding-top:38px}}
