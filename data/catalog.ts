@@ -1,4 +1,4 @@
-export type Product={id:number;name:string;carat:string;metal:string;price:number;color:string;kind:string;badge?:string;sprite:number;sheet?:'electric';description:string};
+export type Product={id:number;name:string;carat:string;metal:string;price:number;color:string;kind:string;badge?:string;sprite:number;sheet?:'electric';image?:string;description:string};
 export const products:Product[]=[
 {id:1,name:'Blue Lab Diamond Bezel Ring',carat:'0.35 ct',metal:'18k Gold-Plated Sterling Silver',price:395,color:'Blue',kind:'Ring',badge:'NEW',sprite:0,description:'A vivid blue lab-grown diamond in a clean, low-profile bezel, made for effortless daily wear.'},
 {id:2,name:'Rainbow Arc Huggies',carat:'0.28 ct',metal:'18k Gold-Plated Sterling Silver',price:295,color:'Rainbow',kind:'Earrings',badge:'BESTSELLER',sprite:1,description:'A joyful spectrum of lab-grown diamonds, set into close-fitting golden hoops.'},
@@ -18,10 +18,17 @@ export const products:Product[]=[
 {id:105,name:'Sun Diamond Charm',carat:'0.42 ct',metal:'18k Gold-Plated Sterling Silver',price:295,color:'Yellow',kind:'Charm',sprite:4,sheet:'electric',description:'A pocket-sized burst of sunshine, articulated in yellow lab-grown diamonds.'},
 {id:106,name:'Blue Garden Line Bracelet',carat:'1.10 ct',metal:'Sterling Silver',price:695,color:'Blue Green',kind:'Bracelet',sprite:5,sheet:'electric',description:'Alternating blue and green diamonds create a cool ribbon of colour around the wrist.'},
 {id:107,name:'Violet Orchid Ring',carat:'0.38 ct',metal:'Recycled Sterling Silver',price:285,color:'Violet',kind:'Ring',sprite:6,sheet:'electric',description:'A hand-finished silver orchid curls around a pear-shaped violet lab-grown diamond.'},
-{id:108,name:'Rainbow Garden Huggies',carat:'0.40 ct',metal:'18k Gold-Plated Sterling Silver',price:345,color:'Rainbow',kind:'Earrings',sprite:7,sheet:'electric',description:'A joyful garden of coloured diamonds set into polished everyday hoops.'}
+{id:108,name:'Rainbow Garden Huggies',carat:'0.40 ct',metal:'18k Gold-Plated Sterling Silver',price:345,color:'Rainbow',kind:'Earrings',sprite:7,sheet:'electric',description:'A joyful garden of coloured diamonds set into polished everyday hoops.'},
+{id:201,name:'Signature Diamond Studs',carat:'0.50 ct',metal:'Sterling Silver',price:395,color:'White',kind:'Earrings',badge:'NEW',sprite:0,image:'/images/classic/201.jpg',description:'The forever pair: bright round lab-grown diamonds in clean four-prong sterling-silver settings.'},
+{id:202,name:'Petite Bezel Studs',carat:'0.24 ct',metal:'Sterling Silver',price:245,color:'White',kind:'Earrings',sprite:0,image:'/images/classic/202.jpg',description:'Small round diamonds framed in smooth silver bezels for a polished, low-profile everyday finish.'},
+{id:203,name:'Classic Solitaire Pendant',carat:'0.50 ct',metal:'Sterling Silver',price:445,color:'White',kind:'Necklace',badge:'BESTSELLER',sprite:0,image:'/images/classic/203.jpg',description:'A single round diamond in a timeless four-prong setting, suspended on a fine sterling-silver chain.'},
+{id:204,name:'Floating Bezel Pendant',carat:'0.30 ct',metal:'Sterling Silver',price:325,color:'White',kind:'Necklace',sprite:0,image:'/images/classic/204.jpg',description:'A petite diamond held in a polished silver rim, designed to sit like a point of light at the collarbone.'},
+{id:205,name:'Three-Diamond Drop Pendant',carat:'0.36 ct',metal:'Sterling Silver',price:395,color:'White',kind:'Necklace',sprite:0,image:'/images/classic/205.jpg',description:'Three graduated moments of brilliance create a graceful vertical line in polished sterling silver.'},
+{id:206,name:'Essential Tennis Bracelet',carat:'2.00 ct',metal:'Sterling Silver',price:895,color:'White',kind:'Bracelet',badge:'NEW',sprite:0,image:'/images/classic/206.jpg',description:'A continuous line of round lab-grown diamonds, articulated for fluid movement and effortless daily wear.'}
 ];
 export const collections=[
 {name:'New & Noted',desc:'The newest ASTRELI pieces, selected for first discovery.',cover:101,ids:[101,102,1,4,11,107]},
+{name:'The Classics',desc:'Pure white lab-grown diamonds in enduring sterling-silver settings, designed to stay in rotation.',cover:201,ids:[201,202,203,204,205,206]},
 {name:'Colour Theory',desc:'A joyful spectrum of blue, pink, yellow and rainbow lab-grown diamonds.',cover:2,ids:[1,2,4,5,7,10,11,12]},
 {name:'Electric Garden',desc:'Botanical forms come alive in vivid, electric diamond colour.',cover:103,ids:[101,102,103,104,105,106,107,108]},
 {name:'Everyday Icons',desc:'Clean, versatile silhouettes designed to become daily signatures.',cover:3,ids:[1,2,3,6,8,10]},
