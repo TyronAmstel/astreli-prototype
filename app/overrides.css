@@ -4,7 +4,7 @@
 .intro{display:grid;grid-template-columns:.82fr 1.18fr;min-height:520px;padding:0;text-align:left}
 .intro-copy{padding:70px 5vw;display:flex;flex-direction:column;justify-content:center}
 .intro-copy h1{font-size:clamp(50px,5.6vw,88px)}
-.hero-image{position:relative;min-height:520px;overflow:hidden;background:url('/images/astreli-hero-editorial.jpg') center/cover no-repeat}
+.hero-image{position:relative;min-height:520px;overflow:hidden;background:url('/images/astreli-hero-editorial-v2.jpg') center/cover no-repeat}
 .hero-image img{display:none}
 .collection-browser{padding-bottom:38px}
 .products{padding-top:48px}
