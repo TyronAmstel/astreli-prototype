@@ -36,3 +36,5 @@ export const collections=[
 {name:'Tokens & Charms',desc:'Small symbols with personal meaning and genuine diamond brilliance.',cover:4,ids:[4,5,105]},
 {name:'Gifts Under €350',desc:'Considered diamond pieces for celebrating beautifully, all under €350.',cover:102,ids:[2,4,5,6,7,8,11,102,104,105,107,108]}
 ];
+export const productSlug=(product:Product)=>product.name.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'');
+export const productBySlug=new Map(products.map(product=>[productSlug(product),product]));
