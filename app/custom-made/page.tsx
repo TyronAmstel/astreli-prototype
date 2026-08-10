@@ -1,0 +1,20 @@
+import type {Metadata} from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
+import {ArrowLeft,Check,Instagram} from 'lucide-react';
+import CustomMadeForm from './CustomMadeForm';
+
+export const metadata:Metadata={title:'Custom Made — ASTRELI',description:'Create a personal lab-grown diamond jewel in sterling silver with ASTRELI.'};
+
+export default function CustomMadePage(){return <>
+ <div className="announcement">Complimentary design proposal &amp; personal quote</div>
+ <header className="info-header"><Link className="brand" href="/"><b>ASTRELI</b><span>LAB-GROWN DIAMONDS</span></Link><nav className="custom-nav"><Link href="/#collections">COLLECTIONS</Link><Link href="/custom-made">CUSTOM MADE</Link></nav></header>
+ <main className="custom-main">
+  <section className="custom-hero"><div className="custom-hero-copy"><Link className="info-back" href="/"><ArrowLeft/> BACK TO SHOP</Link><small>CUSTOM, STILL CURATED</small><h1>YOUR IDEA.<br/>MADE TO KEEP.</h1><p>Begin with a picture, a link or simply a thought. We shape it into a personal lab-grown diamond jewel in sterling silver.</p><a className="custom-primary" href="#start">START YOUR PIECE</a></div><div className="custom-hero-image"><Image src="/images/astreli-custom-made.jpg" fill priority sizes="(max-width: 800px) 100vw, 55vw" alt="A custom sterling-silver lab-diamond ring progressing from sketch to 3D design and finished jewel"/></div></section>
+  <section className="custom-manifesto"><small>ONE OF ONE, THE ASTRELI WAY</small><h2>Personal does not have to mean excessive.</h2><p>We work within ASTRELI’s design language: balanced proportions, genuine lab-grown diamonds and enduring 925 silver. Every commission is edited with care, so the result feels distinctive now and relevant for years.</p><div><span><Check/> Sterling silver at the core</span><span><Check/> Lab-grown diamonds in white or colour</span><span><Check/> Gold plating available when it suits the design</span></div></section>
+  <section className="custom-process"><header><small>THE PROCESS</small><h2>From thought to something real.</h2></header><div><article><b>01</b><h3>Share the spark</h3><p>Send an image, inspiration link or description. A ring, pendant, earring, bracelet or something we have not imagined yet.</p></article><article><b>02</b><h3>We curate</h3><p>We refine the proportion, diamond choice and metal finish, then return with a personal direction and transparent quote.</p></article><article><b>03</b><h3>See it first</h3><p>You receive a complimentary digital design proposal before deciding whether the piece should be made.</p></article><article><b>04</b><h3>Made to keep</h3><p>Once approved, your jewel is made, inspected and presented in signature ASTRELI packaging.</p></article></div></section>
+  <section id="start" className="custom-start"><div className="custom-start-copy"><small>START A COMMISSION</small><h2>Tell us what you are imagining.</h2><p>No finished drawing is needed. A saved image, a special colour or a few sentences are enough to begin.</p><dl><div><dt>DESIGN PROPOSAL</dt><dd>Complimentary</dd></div><div><dt>PERSONAL QUOTE</dt><dd>No obligation</dd></div><div><dt>TYPICAL TIMING</dt><dd>4–7 weeks after approval</dd></div></dl></div><CustomMadeForm/></section>
+  <section className="custom-note"><small>THE ASTRELI STANDARD</small><p>Custom commissions remain intentionally limited. We accept projects where lab-grown diamonds and silver can create something beautifully resolved—not simply something more.</p></section>
+ </main>
+ <footer><Link className="brand footer-brand" href="/"><b>ASTRELI</b><span>LAB-GROWN DIAMONDS</span></Link><div className="footer-links"><Link href="/custom-made">Custom Made</Link><Link href="/delivery-returns">Delivery &amp; Returns</Link><Link href="/warranty">Warranty</Link><Link href="/materials">Materials</Link><Link href="/contact">Contact</Link><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link></div><div className="footer-bottom"><span>© 2026 ASTRELI</span><a href="#" aria-label="Instagram"><Instagram/></a></div></footer>
+ </>}
