@@ -4,6 +4,7 @@ import './overrides.css';
 import './social.css';
 import './hybrid.css';
 import './waitlist.css';
+import './batches.css';
 import StylistProvider from '@/components/StylistProvider';
 
 export const metadata: Metadata = {
