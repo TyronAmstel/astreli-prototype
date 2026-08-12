@@ -18,7 +18,7 @@ export default async function InfoPage({params}:{params:Promise<{slug:string}>})
  if(!page)notFound();
  return <>
   <div className="announcement">Complimentary delivery &amp; returns</div>
-  <header className="info-header"><Link className="brand" href="/"><b>ASTRELI</b><span>LAB-GROWN DIAMONDS</span></Link><Link href="/#collections">COLLECTIONS</Link></header>
+  <header className="info-header"><Link className="brand" href="/"><b>ASTRELI</b><span>LAB-GROWN DIAMONDS</span></Link><Link href="/drop">COLLECTIONS</Link></header>
   <main className="info-main">
    <Link className="info-back" href="/"><ArrowLeft/> BACK TO SHOP</Link>
    <header><small>{page.eyebrow}</small><h1>{page.title}</h1><p>{page.intro}</p></header>

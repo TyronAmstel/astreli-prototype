@@ -5,6 +5,7 @@ import './social.css';
 import './hybrid.css';
 import './waitlist.css';
 import './batches.css';
+import './demand.css';
 import StylistProvider from '@/components/StylistProvider';
 
 export const metadata: Metadata = {
