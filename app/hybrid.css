@@ -1,0 +1,10 @@
+.hybrid-home .collection-browser{padding-top:90px}
+.hybrid-home .section-top>div>p{max-width:590px;margin-top:12px;color:#666}
+.hybrid-products{padding-top:28px}
+.hybrid-products .product-card{padding-bottom:0}
+.card-talk{width:calc(100% - 28px);margin:0 14px 18px;padding:14px 12px;border:1px solid #111;background:#fff;font-size:10px;letter-spacing:.16em;display:flex;align-items:center;justify-content:center;gap:8px}
+.card-talk:hover{background:#111;color:#fff}.card-talk svg{width:14px}
+.hybrid-home .custom-teaser{margin-top:100px}
+.hybrid-home .talk-end{background:#dfff62;color:#111}.hybrid-home .talk-end button{background:#111;color:#fff}
+.hybrid-home .product-card strong{color:#111}
+@media(max-width:600px){.hybrid-home .collection-browser{padding-top:64px}.hybrid-home .section-top{align-items:flex-end}.hybrid-home .section-top>div>p{font-size:14px}.hybrid-home .product-grid{grid-template-columns:1fr 1fr}.card-talk{width:calc(100% - 16px);margin:0 8px 12px;font-size:8px;padding:12px 5px}.hybrid-home .custom-teaser{margin-top:70px}}
