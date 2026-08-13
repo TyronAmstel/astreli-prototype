@@ -1,0 +1,3 @@
+import Link from 'next/link';import {Logout} from './AdminActions';
+export default function AdminShell({children,demo=false}:{children:React.ReactNode;demo?:boolean}){return <div className="admin-shell"><aside><Link href="/admin" className="admin-mark">ASTRELI<small>OPERATIONS</small></Link><nav><Link href="/admin">Overview</Link><Link href="/admin/customers">Customers</Link><Link href="/admin/conversations">Conversations</Link><Link href="/admin/demand">Demand</Link><Link href="/admin/follow-up">Follow-up</Link><Link href="/admin/export">Export</Link></nav><Logout/></aside><main>{demo&&<div className="demo-banner">DEMO DATA · CONNECT SUPABASE FOR LIVE OPERATIONS</div>}{children}</main></div>}
+

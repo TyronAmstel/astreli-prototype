@@ -1,0 +1,3 @@
+import {redirect} from 'next/navigation';import AdminLogin from '@/components/AdminLogin';import {isAdmin} from '@/lib/server/auth';
+export default async function Login(){if(await isAdmin())redirect('/admin');return <main className="admin-login-page"><div><b>ASTRELI</b><small>PRIVATE OPERATIONS</small><h1>Welcome back.</h1><p>Customers, conversations, demand and follow-up.</p><AdminLogin/></div></main>}
+

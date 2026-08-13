@@ -1,0 +1,3 @@
+import {NextResponse} from 'next/server';import {isAdmin} from '@/lib/server/auth';import {aiService} from '@/lib/ai/service';
+export async function POST(request:Request){if(!await isAdmin())return NextResponse.json({error:'Unauthorised'},{status:401});const body=await request.json();const draft=await aiService.generateAdminDraft({customerName:body.customerName,summary:body.summary,history:Array.isArray(body.history)?body.history:[],product:body.product,waitlistStatus:body.waitlistStatus,preferences:body.preferences});return NextResponse.json({draft,provider:process.env.AI_API_KEY?'configured':'safe_fallback',autoSent:false})}
+

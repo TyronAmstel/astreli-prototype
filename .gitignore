@@ -10,6 +10,7 @@ out/
 .DS_Store
 *.log
 .env*
+!.env.example
 
 # TypeScript cache
 *.tsbuildinfo

@@ -1,0 +1,2 @@
+export const csv=(rows:Record<string,unknown>[])=>{if(!rows.length)return'\uFEFF';const columns=[...new Set(rows.flatMap(row=>Object.keys(row)))];const cell=(value:unknown)=>`"${String(value??'').replace(/"/g,'""').replace(/\r?\n/g,'\n')}"`;return'\uFEFF'+[columns.map(cell).join(','),...rows.map(row=>columns.map(column=>cell(typeof row[column]==='object'?JSON.stringify(row[column]):row[column])).join(','))].join('\r\n')};
+

@@ -1,0 +1,3 @@
+import {NextResponse} from 'next/server';import {backendConfigured,rpc} from '@/lib/server/supabase';
+export async function POST(request:Request){try{const payload=await request.json();if(!payload?.conversationId||!payload?.sessionId||!Array.isArray(payload.messages)||payload.messages.length>200)return NextResponse.json({error:'Invalid conversation payload'},{status:400});if(!backendConfigured())return NextResponse.json({persisted:false,reason:'backend_not_configured'},{status:202});const result=await rpc('ingest_web_lead',payload);return NextResponse.json({persisted:true,result})}catch(error){console.error('Conversation persistence failed',error);return NextResponse.json({error:'Conversation could not be saved. Please try again.'},{status:503})}}
+
